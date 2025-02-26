@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CodeNative</string>
+    <string name="mi_nombre">Katerin Lorena Guerrero Guevara</string>
+    <string name="registro">Registrate</string>
+    <string name="textoIntroductorio">Inicia una nueva aventura con CodeNative y descubre una nueva forma de ver el mundo</string>
+    <string name="comienza">Comienza</string>
+    <string name="texto_bienvenida_login">La aventura está por iniciar, por favor inicia sesión</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="resetPasswordLabel">Recupera tu contraseña</string>
+    <string name="imgIcono">Icon imagen</string>
+    <string name="imgLogin">Imagen de credenciales</string>
+    <string name="inputUserNameLabel">Usuario</string>
+    <string name="inputUserPasswordLabel">Contraseña</string>
+    <string name="ingresa_google">Ingresa con Google</string>
+    <string name="sin_cuenta">¿No tienes cuenta?</string>
+</resources>
