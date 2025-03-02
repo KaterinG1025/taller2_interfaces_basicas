@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity"
+    android:background="#E6E6E6">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="100dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp" />
+
+    <ImageView
+        android:id="@+id/iv_logo_registro"
+        android:layout_width="152dp"
+        android:layout_height="172dp"
+        android:src="@drawable/imagen"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.364" />
+
+    <TextView
+        android:id="@+id/tv_descripcion_contraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/correo_recuperacion"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmail"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo_registro"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        style="@style/EditTextRounded"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Correo Electronico"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRecuperacion"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <Button
+        android:id="@+id/buttonRecuperacion"
+        android:layout_width="217dp"
+        android:layout_height="62dp"
+        android:backgroundTint="@color/boton_main"
+        android:onClick="gotToLogin"
+        android:text="@string/enviar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/boton"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="451dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,4 +13,8 @@
     <string name="inputUserPasswordLabel">Contraseña</string>
     <string name="ingresa_google">Ingresa con Google</string>
     <string name="sin_cuenta">¿No tienes cuenta?</string>
+    <string name="descripcion_registro">Completa el formulario para crear tu cuenta</string>
+    <string name="enviar">Enviar</string>
+    <string name="correo_recuperacion">¿Olvidaste tu contraseña? Ingresa tu correo para enviarte el proceso de recuperación.</string>
+    <string name="Inicio_Sesion">Inicio de Sesion</string>
 </resources>

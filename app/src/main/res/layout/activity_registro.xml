@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity"
+    android:background="#E6E6E6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_logo_registro"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:src="@drawable/imagen" />
+
+        <TextView
+            android:id="@+id/tv_nombreapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="#F74E51"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_descripcion_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion_registro"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/editTextNombres"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Nombres"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            style="@style/EditTextRounded"/>
+
+        <EditText
+            android:id="@+id/editTextApellidos"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Apellidos"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            style="@style/EditTextRounded" />
+
+        <EditText
+            android:id="@+id/editTextCorreo"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Correo Electronico"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            style="@style/EditTextRounded" />
+
+        <EditText
+            android:id="@+id/editTextTelefono"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="Telefono"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            style="@style/EditTextRounded" />
+
+        <EditText
+            android:id="@+id/editTextContrasena"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Contraseña"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            style="@style/EditTextRounded" />
+
+        <EditText
+            android:id="@+id/editTextRepetirContrasena"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Repetir Contraseña"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            style="@style/EditTextRounded" />
+
+        <CheckBox
+            android:id="@+id/terminosCondiciones"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Acepto los Términos y Condiciones"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonRegistro"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="@color/boton_main"
+            android:text="@string/registro"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/boton"
+            android:textSize="24sp"
+            app:iconTint="#F74E51"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvIntroText"
+            app:strokeColor="#F74E51" />
+
+
+    </LinearLayout>
+
+
+
+    </ScrollView>
+

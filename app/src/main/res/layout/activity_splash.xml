@@ -35,7 +35,6 @@
         android:textColor="#F74E51"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvAppName"
         app:layout_constraintVertical_bias="0.459" />
 
     <ImageView
