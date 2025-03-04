@@ -13,8 +13,11 @@ class RegistroActivity : AppCompatActivity() {
 
     private lateinit var editTextNombres: EditText
     private lateinit var editTextApellidos: EditText
+    private lateinit var editTextCorreo: EditText
+    private lateinit var editTextTelefono: EditText
     private lateinit var buttonRegistro: Button
     private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var buttonRegresar: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +32,10 @@ class RegistroActivity : AppCompatActivity() {
         //Inicializar variables de vista
         editTextNombres = findViewById(R.id.editTextNombres)
         editTextApellidos = findViewById(R.id.editTextApellidos)
+        editTextCorreo = findViewById(R.id.editTextCorreo)
+        editTextTelefono = findViewById(R.id.editTextTelefono)
         buttonRegistro = findViewById(R.id.buttonRegistro)
+        buttonRegresar = findViewById(R.id.buttonRegresar)
 
         //Configuracion listener boton de registro
 
@@ -42,6 +48,11 @@ class RegistroActivity : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             }
+        }
+        buttonRegresar.setOnClickListener{
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 
@@ -58,10 +69,20 @@ class RegistroActivity : AppCompatActivity() {
 
     private fun guardarDatosUsuario(){
         val editor = sharedPreferences.edit()
-        editor.putString("nombre",editTextNombres.text.toString().trim())
+        editor.putString("nombres",editTextNombres.text.toString().trim())
+        editor.putString("apellidos",editTextApellidos.text.toString().trim())
+        editor.putString("correo",editTextCorreo.text.toString().trim())
+        editor.putString("telefono",editTextTelefono.text.toString().trim())
+        editor.putString("id1","hola")
+
+        val correoRegistrado = sharedPreferences.getString("correo","")
+        val id1 = sharedPreferences.getString("id1","")
+
         editor.apply()
         Log.d("Registro Activity", "guardarDatosUsuario: Datos del usuario guardados")
         Toast.makeText(this,"Registro exitoso",Toast.LENGTH_SHORT).show()
+        Log.d("Recuperar Contraseña", "verificarCorreo: Error correo: $correoRegistrado, id: $id1")
+
     }
 
 }

@@ -44,7 +44,7 @@
             android:layout_height="30dp"
             android:ems="10"
             android:inputType="text"
-            android:text="Nombres"
+            android:hint="Nombres"
             android:textColor="@color/black"
             android:layout_marginTop="30dp"
             style="@style/EditTextRounded"/>
@@ -55,7 +55,7 @@
             android:layout_height="30dp"
             android:ems="10"
             android:inputType="text"
-            android:text="Apellidos"
+            android:hint="Apellidos"
             android:textColor="@color/black"
             android:layout_marginTop="10dp"
             style="@style/EditTextRounded" />
@@ -66,7 +66,7 @@
             android:layout_height="30dp"
             android:ems="10"
             android:inputType="text"
-            android:text="Correo Electronico"
+            android:hint="Correo Electronico"
             android:textColor="@color/black"
             android:layout_marginTop="10dp"
             style="@style/EditTextRounded" />
@@ -77,7 +77,7 @@
             android:layout_height="30dp"
             android:ems="10"
             android:inputType="number"
-            android:text="Telefono"
+            android:hint="Telefono"
             android:textColor="@color/black"
             android:layout_marginTop="10dp"
             style="@style/EditTextRounded" />
@@ -87,8 +87,8 @@
             android:layout_width="300dp"
             android:layout_height="30dp"
             android:ems="10"
-            android:inputType="text"
-            android:text="Contraseña"
+            android:inputType="textPassword"
+            android:hint="Contraseña"
             android:textColor="@color/black"
             android:layout_marginTop="10dp"
             style="@style/EditTextRounded" />
@@ -98,8 +98,8 @@
             android:layout_width="300dp"
             android:layout_height="30dp"
             android:ems="10"
-            android:inputType="text"
-            android:text="Repetir Contraseña"
+            android:inputType="textPassword"
+            android:hint="Repetir Contraseña"
             android:textColor="@color/black"
             android:layout_marginTop="10dp"
             style="@style/EditTextRounded" />
@@ -122,6 +122,23 @@
             android:layout_marginTop="26dp"
             android:backgroundTint="@color/boton_main"
             android:text="@string/registro"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/boton"
+            android:textSize="24sp"
+            app:iconTint="#F74E51"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvIntroText"
+            app:strokeColor="#F74E51" />
+
+        <Button
+            android:id="@+id/buttonRegresar"
+            android:layout_width="293dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="@color/boton_main"
+            android:text="@string/Regresar_login"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textColor="@color/boton"
             android:textSize="24sp"

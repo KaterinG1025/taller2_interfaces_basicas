@@ -34,6 +34,8 @@ class PerfilActivity : AppCompatActivity(){
             //Codigo para editar el perfil
         }
 
+        ConsultarInfoUsuario()
+
     }
 
     override fun onStart() {
@@ -56,16 +58,16 @@ class PerfilActivity : AppCompatActivity(){
         Log.d("ProfileActivity", "onDestroy: Activity Profile está destruida")
     }
 
-//    private fun ConsultarInfoUsuario() {
-//        val nombres = sharedPreferences.getString("nombres","")
-//        val apellidos = sharedPreferences.getString("apellidos","")
-//        val correo = sharedPreferences.getString("correo","")
-//        val telefono = sharedPreferences.getString("telefono","")
-//
-//        textViewNombres.setText(nombres)
-//        textViewApellidos.setText(apellido)
-//        textViewCorreo.setText(correo)
-//        textViewTelefono.setText(telefono)
-//    }
+    private fun ConsultarInfoUsuario() {
+        val nombres = sharedPreferences.getString("nombres","")
+        val apellidos = sharedPreferences.getString("apellidos","")
+        val correo = sharedPreferences.getString("correo","")
+        val telefono = sharedPreferences.getString("telefono","")
+
+        textViewNombre.text = nombres
+        textViewApellido.text=apellidos
+        textViewCorreo.text = correo
+        textViewTelefono.text=telefono
+    }
 }
 

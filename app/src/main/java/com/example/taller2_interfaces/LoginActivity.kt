@@ -16,7 +16,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         textViewRegistrar= findViewById(R.id.textRegistrologin)
-        textViewrecuperarContraseña = findViewById(R.id.sin_cuenta)
+        textViewrecuperarContraseña = findViewById(R.id.textResetPassword)
         buttonLogin = findViewById(R.id.buttonLogin)
 
         textViewRegistrar.setOnClickListener{
@@ -28,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
 
         textViewrecuperarContraseña.setOnClickListener{
             //redireccionamiento
-            val intent = Intent(this,RecuperarContrasenaActivity::class.java)
+            val intent = Intent(this, RecuperarContrasenaActivity::class.java)
             startActivity(intent)
             finish()
         }
